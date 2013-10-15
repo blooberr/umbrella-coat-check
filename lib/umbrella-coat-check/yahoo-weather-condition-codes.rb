@@ -1,3 +1,4 @@
+module UmbrellaCoatCheck
 module YahooWeather
   # as someone that's never grew up with snow, bringing an umbrella may differ.
   CONDITION_CODES = [
@@ -52,5 +53,6 @@ module YahooWeather
     [ true,      true ],  # isolated thundershowers
     [ false,     false]   # not available 
   ]
+end
 end
 

@@ -16,7 +16,8 @@ Or install it yourself as:
 
 ## Usage
 
-YahooWeather.get_forecast
+default WOEID is set to Yahoo's HQ in Sunnyvale
+UmbrellaCoatCheck.YahooWeather.get_forecast
 
 Results look like - {"day"=>"Mon", "date"=>"14 Oct 2013", "low"=>"53", "high"=>"68", "text"=>"Partly Cloudy", "code"=>"29", :need_umbrella=>false, :need_coat=>false}
 {"day"=>"Tue", "date"=>"15 Oct 2013", "low"=>"57", "high"=>"71", "text"=>"Sunny", "code"=>"32", :need_umbrella=>false, :need_coat=>false}
