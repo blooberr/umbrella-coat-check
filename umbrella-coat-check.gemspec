@@ -1,0 +1,26 @@
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+puts lib
+require 'umbrella-coat-check/version'
+
+Gem::Specification.new do |spec|
+  spec.name          = "umbrella-coat-check"
+  spec.version       = UmbrellaCoatCheck::VERSION
+  spec.authors       = ["blooberr"]
+  spec.email         = ["blooberr@gmail.com"]
+  spec.description   = %q{I only check if I need a coat or an umbrella before I travel.  What should I bring?}
+  spec.summary       = spec.description
+  spec.homepage      = ""
+  spec.license       = "MIT"
+
+  spec.files         = `git ls-files`.split($/)
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.require_paths = ["lib"]
+
+  spec.add_development_dependency "bundler", "~> 1.3"
+  spec.add_development_dependency "rake"
+end
+
